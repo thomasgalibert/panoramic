@@ -40,6 +40,7 @@ module Panoramic
       ActionView::Template.new(source, identifier, handler,
                                :locals => [],
                                :format => Mime[record.format].to_sym,
+                               :variant => nil,
                                :virtual_path => virtual_path(record.path, record.partial))
     end
 
